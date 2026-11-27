@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f5fc;
+    color: #263445;
+    padding: 20px;
+}
+
+header {
+    background: #2878c8;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+.container {
+    max-width: 550px;
+    width: 100%;
+    margin: auto;
+}
+
+.task-section {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+h2 {
+    color: #2878c8;
+    font-size: 21px;
+    margin-bottom: 18px;
+    margin-top: 15px;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+#taskInput {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: 52px;
+    padding: 12px 15px;
+    border: 2px solid #d5e2f0;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    writing-mode: horizontal-tb;
+    direction: ltr;
+    text-align: left;
+    background: white;
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #2878c8;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #2878c8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#micButton {
+    background: #e8f1fc;
+    color: #2878c8;
+    border: 1px solid #c9ddf5;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+#voiceStatus {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #2878c8;
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+    background: #f0f5fc;
+    border-radius: 12px;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+#taskList li span {
+    flex: 1;
+    min-width: 0;
+}
+
+#taskList li.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .task-section {
+        padding: 15px;
+    }
+}

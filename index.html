@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA VIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>MA VIE</h1>
+        <p>Ton assistant personnel du quotidien</p>
+    </header>
+
+    <main class="container">
+
+        <section class="task-section">
+            <h2>Mes tâches</h2>
+
+            <div class="task-form">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Écris ta tâche ici..."
+                    autocomplete="off"
+                >
+
+                <button id="addTask">Ajouter une tâche</button>
+
+                <button id="micButton" type="button">
+                    🎤 Dicter une tâche
+                </button>
+            </div>
+
+            <p id="voiceStatus"></p>
+
+            <h2>Ma liste</h2>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
